@@ -1,0 +1,214 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		050F17911301390F0046DF3C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		050F17921301390F0046DF3C /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		050F17941301390F0046DF3C /* C++.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "C++.mk"; sourceTree = "<group>"; };
+		050F17951301390F0046DF3C /* C.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = C.mk; sourceTree = "<group>"; };
+		050F17961301390F0046DF3C /* Objective-C.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objective-C.mk"; sourceTree = "<group>"; };
+		050F17971301390F0046DF3C /* makefile-config.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "makefile-config.mk"; sourceTree = "<group>"; };
+		050F17991301390F0046DF3C /* en.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = en.mk; sourceTree = "<group>"; };
+		050F179A1301390F0046DF3C /* fr.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fr.mk; sourceTree = "<group>"; };
+		050F17A0130139440046DF3C /* fibre.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fibre.c; sourceTree = "<group>"; };
+		050F17A1130139870046DF3C /* libfibre.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libfibre.c; sourceTree = "<group>"; };
+		050F17A31301399F0046DF3C /* libfibre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libfibre.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		050F177E130138E80046DF3C = {
+			isa = PBXGroup;
+			children = (
+				050F17911301390F0046DF3C /* LICENSE.txt */,
+				050F17921301390F0046DF3C /* makefile */,
+				050F17931301390F0046DF3C /* makefile-code */,
+				050F17971301390F0046DF3C /* makefile-config.mk */,
+				050F17981301390F0046DF3C /* makefile-lang */,
+				050F179B1301390F0046DF3C /* source */,
+			);
+			sourceTree = "<group>";
+		};
+		050F17931301390F0046DF3C /* makefile-code */ = {
+			isa = PBXGroup;
+			children = (
+				050F17941301390F0046DF3C /* C++.mk */,
+				050F17951301390F0046DF3C /* C.mk */,
+				050F17961301390F0046DF3C /* Objective-C.mk */,
+			);
+			path = "makefile-code";
+			sourceTree = "<group>";
+		};
+		050F17981301390F0046DF3C /* makefile-lang */ = {
+			isa = PBXGroup;
+			children = (
+				050F17991301390F0046DF3C /* en.mk */,
+				050F179A1301390F0046DF3C /* fr.mk */,
+			);
+			path = "makefile-lang";
+			sourceTree = "<group>";
+		};
+		050F179B1301390F0046DF3C /* source */ = {
+			isa = PBXGroup;
+			children = (
+				050F17A0130139440046DF3C /* fibre.c */,
+				050F179C1301390F0046DF3C /* include */,
+				050F179D1301390F0046DF3C /* lib */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		050F179C1301390F0046DF3C /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		050F179D1301390F0046DF3C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				050F179E1301390F0046DF3C /* include */,
+				050F17A1130139870046DF3C /* libfibre.c */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		050F179E1301390F0046DF3C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				050F17A31301399F0046DF3C /* libfibre.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		050F1785130138E80046DF3C /* fibre */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 050F1788130138E80046DF3C /* Build configuration list for PBXLegacyTarget "fibre" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = fibre;
+			passBuildSettingsInEnvironment = 1;
+			productName = fibre;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		050F1780130138E80046DF3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = eosgarden;
+			};
+			buildConfigurationList = 050F1783130138E80046DF3C /* Build configuration list for PBXProject "fibre" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 050F177E130138E80046DF3C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				050F1785130138E80046DF3C /* fibre */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		050F1786130138E80046DF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		050F1787130138E80046DF3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		050F1789130138E80046DF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		050F178A130138E80046DF3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		050F1783130138E80046DF3C /* Build configuration list for PBXProject "fibre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050F1786130138E80046DF3C /* Debug */,
+				050F1787130138E80046DF3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050F1788130138E80046DF3C /* Build configuration list for PBXLegacyTarget "fibre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050F1789130138E80046DF3C /* Debug */,
+				050F178A130138E80046DF3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 050F1780130138E80046DF3C /* Project object */;
+}
