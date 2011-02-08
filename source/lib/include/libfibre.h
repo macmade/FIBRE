@@ -37,10 +37,13 @@
 
 #ifndef _LIBFIBRE_H_
 #define _LIBFIBRE_H_
+#pragma once
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#include "stdc/c89.h"
 
 void libfibre_encode( FILE * source, FILE * destination, unsigned int interval );
 void libfibre_decode( FILE * source, FILE * destination, unsigned int interval );

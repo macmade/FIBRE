@@ -35,6 +35,9 @@
  * @abstract    
  */
 
+#include "stdc/c89.h"
+#include "libfibre.h"
+
 /*!
  * @function    main
  * @abstract    Program's entry point

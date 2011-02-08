@@ -69,13 +69,13 @@ EXEC                = fibre
 # Dependancies for the executables (objects)
 #-------------------------------------------------------------------------------
 
-DEPS_egpack         = 
+DEPS_fibre          = 
 
 #-------------------------------------------------------------------------------
 # Dependancies for the executables (libraries)
 #-------------------------------------------------------------------------------
 
-DEPS_LIB_egpack     = libfibre
+DEPS_LIB_fibre      = libfibre
 
 #-------------------------------------------------------------------------------
 # Dependancies for the executables (system libraries)

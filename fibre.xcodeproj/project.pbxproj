@@ -18,6 +18,19 @@
 		050F17A0130139440046DF3C /* fibre.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fibre.c; sourceTree = "<group>"; };
 		050F17A1130139870046DF3C /* libfibre.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libfibre.c; sourceTree = "<group>"; };
 		050F17A31301399F0046DF3C /* libfibre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libfibre.h; sourceTree = "<group>"; };
+		050F17AB13013B7E0046DF3C /* bool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bool.h; sourceTree = "<group>"; };
+		050F17AC13013B7E0046DF3C /* c89.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c89.h; sourceTree = "<group>"; };
+		050F17AD13013B7E0046DF3C /* c95.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c95.h; sourceTree = "<group>"; };
+		050F17AE13013B7E0046DF3C /* c99.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c99.h; sourceTree = "<group>"; };
+		050F17AF13013B7E0046DF3C /* glibc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glibc.h; sourceTree = "<group>"; };
+		050F17B013013B7E0046DF3C /* posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = posix.h; sourceTree = "<group>"; };
+		050F17B213013B7E0046DF3C /* ascii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ascii.h; sourceTree = "<group>"; };
+		050F17B313013B7E0046DF3C /* bitwise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitwise.h; sourceTree = "<group>"; };
+		050F17B413013B7E0046DF3C /* gnuc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gnuc.h; sourceTree = "<group>"; };
+		050F17B513013B7E0046DF3C /* keywords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keywords.h; sourceTree = "<group>"; };
+		050F17B613013B7E0046DF3C /* math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math.h; sourceTree = "<group>"; };
+		050F17B713013B7E0046DF3C /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string.h; sourceTree = "<group>"; };
+		050F17B813013B7E0046DF3C /* std-extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "std-extras.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -65,6 +78,7 @@
 		050F179C1301390F0046DF3C /* include */ = {
 			isa = PBXGroup;
 			children = (
+				050F17AA13013B7E0046DF3C /* stdc */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -84,6 +98,34 @@
 				050F17A31301399F0046DF3C /* libfibre.h */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		050F17AA13013B7E0046DF3C /* stdc */ = {
+			isa = PBXGroup;
+			children = (
+				050F17AB13013B7E0046DF3C /* bool.h */,
+				050F17AC13013B7E0046DF3C /* c89.h */,
+				050F17AD13013B7E0046DF3C /* c95.h */,
+				050F17AE13013B7E0046DF3C /* c99.h */,
+				050F17AF13013B7E0046DF3C /* glibc.h */,
+				050F17B013013B7E0046DF3C /* posix.h */,
+				050F17B113013B7E0046DF3C /* std-extras */,
+				050F17B813013B7E0046DF3C /* std-extras.h */,
+			);
+			path = stdc;
+			sourceTree = "<group>";
+		};
+		050F17B113013B7E0046DF3C /* std-extras */ = {
+			isa = PBXGroup;
+			children = (
+				050F17B213013B7E0046DF3C /* ascii.h */,
+				050F17B313013B7E0046DF3C /* bitwise.h */,
+				050F17B413013B7E0046DF3C /* gnuc.h */,
+				050F17B513013B7E0046DF3C /* keywords.h */,
+				050F17B613013B7E0046DF3C /* math.h */,
+				050F17B713013B7E0046DF3C /* string.h */,
+			);
+			path = "std-extras";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

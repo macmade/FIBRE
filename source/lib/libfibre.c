@@ -35,6 +35,8 @@
  * @abstract    
  */
 
+#include "libfibre.h"
+
 void libfibre_encode( FILE * source, FILE * destination, unsigned int interval )
 {
     ( void )source;
