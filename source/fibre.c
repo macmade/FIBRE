@@ -74,14 +74,14 @@ int main( int argc, char * argv[] )
     
     if( source == NULL )
     {
-        printf( "Error: unable to open source file for reading." );
+        printf( "Error: unable to open source file for reading.\n" );
         
         return EXIT_FAILURE;
     }
     
     if( destination == NULL )
     {
-        printf( "Error: unable to open destination file for writing." );
+        printf( "Error: unable to open destination file for writing.\n" );
         
         return EXIT_FAILURE;
     }
