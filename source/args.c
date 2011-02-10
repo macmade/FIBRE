@@ -26,67 +26,44 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  ******************************************************************************/
-
-/* $Id $ */
+ 
+/* $Id */
 
 /*!
- * @file        
+ * @file        types.h
  * @copyright   eosgarden 2011 - Jean-David Gadina <macmade@eosgarden.com>
- * @abstract    
+ * @abstract    Program's type definitions
  */
 
 #include "fibre.h"
 
 /*!
- * @function    main
- * @abstract    Program's entry point
- * @param       argc    The number of CLI arguments
- * @param       argv    A array with the CLI arguments
- * @result      The program's exit status
+ * 
  */
-int main( int argc, char * argv[] )
+void fibre_get_cli_args( int argc, char ** argv, fibre_cli_args * args )
 {
-    fibre_cli_args args;
-    FILE         * source;
-    FILE         * destination;
+    int i;
     
-    fibre_get_cli_args( argc, argv, &args );
+    i                 = 0;
+    args->interval    = 0;
+    args->source      = NULL;
+    args->destination = NULL;
     
-    if( args.interval == 0 || args.source == NULL || args.destination == NULL )
+    while( ++i < argc && ( ( char * )*( ++argv ) )[ 0 ] == '-' )
     {
-        printf
-        (
-            "\n"
-            "USAGE: %s [OPTIONS] SOURCE DESTINATION\n"
-            "\n"
-            "Options:\n"
-            "\n"
-            "    -i:    Byte interval (mandatory)\n"
-            "\n",
-            argv[ 0 ]
-        );
-        
-        return EXIT_SUCCESS;
+        switch( ( ( char * )*( argv ) )[ 1 ] )
+        {
+            case 'i': args->interval = atoi( *( ++argv ) ); break;
+        }
     }
     
-    source      = fopen( args.source,      "rb" );
-    destination = fopen( args.destination, "wb" );
-    
-    if( source == NULL )
+    if( i++ < argc )
     {
-        printf( "Error: unable to open source file for reading." );
-        
-        return EXIT_FAILURE;
+        args->source = *( argv++ );
     }
     
-    if( destination == NULL )
+    if( i++ < argc )
     {
-        printf( "Error: unable to open destination file for writing." );
-        
-        return EXIT_FAILURE;
+        args->destination = *( argv );
     }
-    
-    libfibre_encode( source, destination, args.interval );
-    
-    return EXIT_SUCCESS;
 }

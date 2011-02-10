@@ -69,7 +69,7 @@ EXEC                = fibre
 # Dependancies for the executables (objects)
 #-------------------------------------------------------------------------------
 
-DEPS_fibre          = 
+DEPS_fibre          = args
 
 #-------------------------------------------------------------------------------
 # Dependancies for the executables (libraries)

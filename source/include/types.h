@@ -26,67 +26,44 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  ******************************************************************************/
-
-/* $Id $ */
+ 
+/* $Id: types.h 22 2011-01-18 09:32:51Z macmade@eosgarden.com $ */
 
 /*!
- * @file        
+ * @header      
  * @copyright   eosgarden 2011 - Jean-David Gadina <macmade@eosgarden.com>
  * @abstract    
  */
 
-#include "fibre.h"
+#ifndef _FIBRE_TYPES_H_
+#define _FIBRE_TYPES_H_
+#pragma once
 
-/*!
- * @function    main
- * @abstract    Program's entry point
- * @param       argc    The number of CLI arguments
- * @param       argv    A array with the CLI arguments
- * @result      The program's exit status
- */
-int main( int argc, char * argv[] )
-{
-    fibre_cli_args args;
-    FILE         * source;
-    FILE         * destination;
+#ifdef __cplusplus
+extern "C" {
+#endif
     
-    fibre_get_cli_args( argc, argv, &args );
+    /* System includes */
+    #include <stdc/bool.h>
     
-    if( args.interval == 0 || args.source == NULL || args.destination == NULL )
+    /*!
+     * @typedef     egpack_cli_args
+     * @abstract    Command line arguments
+     * @field       interval    The bytes interval
+     * @field       source      The source file name
+     * @field       destination The destination file name
+     */
+    typedef struct _fibre_cli_args
     {
-        printf
-        (
-            "\n"
-            "USAGE: %s [OPTIONS] SOURCE DESTINATION\n"
-            "\n"
-            "Options:\n"
-            "\n"
-            "    -i:    Byte interval (mandatory)\n"
-            "\n",
-            argv[ 0 ]
-        );
-        
-        return EXIT_SUCCESS;
+        unsigned int interval;
+        char       * source;
+        char       * destination;
     }
+    fibre_cli_args;
     
-    source      = fopen( args.source,      "rb" );
-    destination = fopen( args.destination, "wb" );
-    
-    if( source == NULL )
-    {
-        printf( "Error: unable to open source file for reading." );
-        
-        return EXIT_FAILURE;
-    }
-    
-    if( destination == NULL )
-    {
-        printf( "Error: unable to open destination file for writing." );
-        
-        return EXIT_FAILURE;
-    }
-    
-    libfibre_encode( source, destination, args.interval );
-    
-    return EXIT_SUCCESS;
+#ifdef __cplusplus
 }
+#endif
+
+#endif /* _FIBRE_TYPES_H_ */
+

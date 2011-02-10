@@ -46,7 +46,6 @@ extern "C" {
 #include "stdc/c89.h"
 
 void libfibre_encode( FILE * source, FILE * destination, unsigned int interval );
-void libfibre_decode( FILE * source, FILE * destination, unsigned int interval );
 
 #ifdef __cplusplus
 }

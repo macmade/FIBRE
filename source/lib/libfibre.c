@@ -39,14 +39,28 @@
 
 void libfibre_encode( FILE * source, FILE * destination, unsigned int interval )
 {
-    ( void )source;
-    ( void )destination;
-    ( void )interval;
-}
-
-void libfibre_decode( FILE * source, FILE * destination, unsigned int interval )
-{
-    ( void )source;
-    ( void )destination;
-    ( void )interval;
+    char       * buffer;
+    unsigned int length;
+    char         start;
+    char         end;
+    
+    if( NULL == ( buffer = ( char * )calloc( sizeof( char ), interval + 1 ) ) )
+    {
+        exit( EXIT_FAILURE );
+    }
+    
+    buffer[ interval + 1 ] = 0;
+    
+    while( ( length = fread( buffer, sizeof( char ), interval, source ) ) )
+    {
+        if( length == interval )
+        {
+            start                  = buffer[ 0 ];
+            end                    = buffer[ interval - 1 ];
+            buffer[ 0 ]            = end;
+            buffer[ interval - 1 ] = start;
+        }
+        
+        fwrite( buffer, sizeof( char ), length, destination );
+    }
 }

@@ -31,6 +31,10 @@
 		050F17B613013B7E0046DF3C /* math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math.h; sourceTree = "<group>"; };
 		050F17B713013B7E0046DF3C /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string.h; sourceTree = "<group>"; };
 		050F17B813013B7E0046DF3C /* std-extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "std-extras.h"; sourceTree = "<group>"; };
+		05CFC3AA130150FF009AE2CE /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		05CFC3AC13015B67009AE2CE /* args.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = args.c; sourceTree = "<group>"; };
+		05CFC3AE13015B8B009AE2CE /* args.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = args.h; sourceTree = "<group>"; };
+		05CFC4EC13044403009AE2CE /* fibre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fibre.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -68,6 +72,7 @@
 		050F179B1301390F0046DF3C /* source */ = {
 			isa = PBXGroup;
 			children = (
+				05CFC3AC13015B67009AE2CE /* args.c */,
 				050F17A0130139440046DF3C /* fibre.c */,
 				050F179C1301390F0046DF3C /* include */,
 				050F179D1301390F0046DF3C /* lib */,
@@ -79,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				050F17AA13013B7E0046DF3C /* stdc */,
+				05CFC3AA130150FF009AE2CE /* types.h */,
+				05CFC3AE13015B8B009AE2CE /* args.h */,
+				05CFC4EC13044403009AE2CE /* fibre.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
