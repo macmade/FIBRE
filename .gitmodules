@@ -1,0 +1,3 @@
+[submodule "deps/STDC"]
+	path = deps/STDC
+	url = git@github.com:macmade/STDC.git
