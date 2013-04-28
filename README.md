@@ -1,7 +1,8 @@
 FIBRE
 =====
 
-### About
+About
+-----
 
 Fixed-Interval Byte Reversal Encoding.
 
