@@ -159,7 +159,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = eosgarden;
+				ORGANIZATIONNAME = XS-Labs;
 			};
 			buildConfigurationList = 050F1783130138E80046DF3C /* Build configuration list for PBXProject "fibre" */;
 			compatibilityVersion = "Xcode 3.2";
