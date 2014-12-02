@@ -2,6 +2,10 @@ FIBRE
 =====
 
 [![Build Status](https://img.shields.io/travis/macmade/FIBRE.svg?branch=master&style=flat)](https://travis-ci.org/macmade/FIBRE)
+[![Issues](http://img.shields.io/github/issues/macmade/FIBRE.svg?style=flat)](https://github.com/macmade/FIBRE/issues)
+![Status](https://img.shields.io/badge/status-inactive-lightgray.svg?style=flat)
+![License](https://img.shields.io/badge/license-boost-brightgreen.svg?style=flat)
+[![Contact](https://img.shields.io/badge/contact-@macmade-blue.svg?style=flat)](https://twitter.com/macmade)
 
 About
 -----
